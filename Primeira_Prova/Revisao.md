@@ -20,6 +20,7 @@
 >> 3. Operações aritméticas;
 >> 4. Acesso à memória;
 >> 5. Escreve no registrador;
+![Pipeline](img/pipeline.jpg)
 
 - Hazards (Conflitos):
 >- **Estrutural:** Instruções diferentes precisam do mesmo hardware ao mesmo tempo;
@@ -56,3 +57,4 @@
 >- **Tempo** = `TempoAntigo * ((1 - FraçãoMelhorada) + FraçãoMelhorada/Speedup) = Instruções/Programa * CPI * Segundos/Ciclos`;
 >- **CPI** = somatório de `(ICi/Instruction count*CPIi)`;
 >- **CPU time** = somatório `(ICi * CPIi)*Clock cycle time`
+![Lei de Amdahl](img/amdahl.jpg)
