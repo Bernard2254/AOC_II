@@ -1,25 +1,14 @@
-#
-
-##
-
-###
-
--
-
- -
-
-
 # Hierarquia de Memórias
 
 - Devido ao custo e velocidade;
 - Para ganhar desempenho na localidade temporal e espacial;
 - Hierarquia:
- - Registrador;
- - L1;
- - L2;
- - L3;
- - RAM;
- - Disco;
+  - Registrador;
+  - L1;
+  - L2;
+  - L3;
+  - RAM;
+  - Disco;
 - A velocidade do processador aumentou muito ao longo do tempo;
 - Já a velocidade de acesso a memória não acompanhou isto (por isso a necessidade de ter uma hierarquia);
 
@@ -41,8 +30,8 @@
 ### Mapeamento direto
 
 - Cada local da memória é mapeado exatamente para um local na cache -> (endereço do bloco) % (número de blocos de cache)
- - Inserir 11000 -> coloca no índice 000 a tag 11;
- - Busca 10000 -> acha no índice 000, mas a tag é diferente, substitui a tag para 10;
+  - Inserir 11000 -> coloca no índice 000 a tag 11;
+  - Busca 10000 -> acha no índice 000, mas a tag é diferente, substitui a tag para 10;
 
 ### Cache totalmente associativa
 
@@ -56,8 +45,8 @@
 ### Cache associativa
 
 - Ao contrário do mapeamento direto, você divide a memória por 2;
- - Inserir 11000 -> coloca no índice 000 a tag 11 na primeira via;
- - Busca 10000 -> acha no índice 000, mas a tag é diferente, acessa a segunda via e coloca 10000;
+  - Inserir 11000 -> coloca no índice 000 a tag 11 na primeira via;
+  - Busca 10000 -> acha no índice 000, mas a tag é diferente, acessa a segunda via e coloca 10000;
 
 ### Categorias de falha
 
